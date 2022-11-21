@@ -22,15 +22,305 @@
 
 <body>
 
-  <h1 class="text-center">Versão 1.3</h1>
-  <div class="search__body">
-    <form action="/search">
-      <div class="search__form">
-        <input class="search__input" name="q" placeholder="O que está procurando?" required type="text" />
-        <button class="search__button search__button--clear" type="button">Limpar</button>
-        <button class="search__button search__button--submit" title="Buscar" type="submit">Buscar</button>
+ 
+  <div class="header">
+    <div class="search search--mobile">
+      <div class="search__icon"></div>
+    </div>
+    <div class="header__hamburger">
+      <button class="hamburger" title="Abrir Menu Fixo">
+        <div class="hamburger__rects">
+          <div class="hamburger__rect"></div>
+          <div class="hamburger__rect"></div>
+          <div class="hamburger__rect"></div>
+          <div class="hamburger__rect"></div>
+        </div>
+        <div class="hamburger__label">
+          <span>menu</span>
+        </div>
+      </button>
+    </div>
+    <div class="header__brand">
+      <a href="/" title="SBT News - A sua fonte segura de informações">
+        <div class="header__logo">
+          <img alt="SBT News - Logo" height="40" src="/assets/images/sbt-news-logo.png" width="98" />
+        </div>
+      </a>
+    </div>
+    <div class="header__interactors">
+      <nav class="social-share">
+        <ul class="social-share__list">
+          <li class="social-share__item social-share__item--twitter">
+            <a href="https://www.twitter.com/sbtnews" target="_blank" target="_blank" title="Visitar Twitter">
+              <img alt="SBT News - Icone Twitter" height="20" src="/assets/images/sbt-news-icone-twitter.png" width="24" />
+            </a>
+          </li>
+          <li class="social-share__item social-share__item--facebook">
+            <a href="https://www.facebook.com/sbtnewsoficial" target="_blank" title="Visitar Facebook">
+              <img alt="SBT News - Icone Facebook" src="/assets/images/sbt-news-icone-facebook.png" />
+            </a>
+          </li>
+          <li class="social-share__item social-share__item--instagram">
+            <a href="https://www.instagram.com/sbtnews/" target="_blank" title="Visitar instagram">
+              <img alt="SBT News - Icone instagram" height="33" src="/assets/images/sbt-news-icone-instagram.png" width="29" />
+            </a>
+          </li>
+          <li class="social-share__item social-share__item--youtube">
+            <a href="https://www.youtube.com/c/SBTNews?utm_source=site_sbt_news&sub_confirmation=1" target="_blank" title="Visitar Youtube">
+              <img alt="SBT News - Icone Youtube" height="18" src="/assets/images/sbt-news-icone-youtube.png" width="26" />
+            </a>
+          </li>
+          <li class="social-share__item social-share__item--linkedin">
+            <a href="https://www.linkedin.com/showcase/sbtnews/" target="_blank" title="Visitar Linkedin">
+              <img alt="SBT News - Icone Linkedin" height="20" src="/assets/images/sbt-news-icone-linkedin.png" width="20" />
+            </a>
+          </li>
+          <li class="social-share__item social-share__item--googleNews">
+            <a href="https://news.google.com/publications/CAAqBwgKMKjTnQswud21Aw" target="_blank"
+              title="Visitar Google News">
+              <img alt="SBT News - Icone Google News" height="23" src="/assets/images/sbt-news-icone-google-news.png" width="42" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <form action="/search">
+        <div class="header__search">
+          <input class="header__input" name="q" placeholder="O que está procurando?" required title="O que está procurando?" type="text" />
+          <button class="header__button" title="Buscar">
+            <img alt="SBT News - Icone Lupa" height="26" src="/assets/images/sbt-news-icone-lupa.png" width="24" />
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="menu-horizontal">
+    <div class="menu-horizontal__container">
+      <nav class="menu-horizontal__nav">
+        <ul class="menu-horizontal__list"></ul>
+      </nav>
+    </div>
+  </div>
+  
+  <div class="menu-fixo">
+    <div class="menu-fixo__header">
+      <div class="menu-fixo__breadcrumb"></div>
+      <div class="menu-fixo__close">+</div>
+    </div>
+    <nav class="menu-fixo__body">
+      <ul class="menu-fixo__list"></ul>
+    </nav>
+    <nav class="menu-fixo__social social-mobile">
+      <ul class="social-mobile__list">
+        <li>
+          <div class="social-mobile__label">
+            <span>Siga-nos:</span>
+          </div>
+        <li>
+          <ul class="social-mobile__icons">
+            <li>
+              <a href="https://www.twitter.com/sbtnews" target="_blank" title="Visitar Twitter">
+                <div class="social-mobile__item social-mobile__item--twitter"></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/sbtnewsoficial" target="_blank" title="Visitar Facebook">
+                <div class="social-mobile__item social-mobile__item--facebook"></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/sbtnews/" target="_blank" title="Visitar Instagram">
+                <div class="social-mobile__item social-mobile__item--instagram"></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/c/SBTNews?utm_source=site_sbt_news&sub_confirmation=1" target="_blank" title="Visitar Youtube">
+                <div class="social-mobile__item social-mobile__item--youtube"></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/showcase/sbtnews/?original_referer=" target="_blank" title="Visitar Linkedin">
+                <div class="social-mobile__item social-mobile__item--linkedin"></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://news.google.com/publications/CAAqBwgKMKjTnQswud21Aw?hl=pt-BR&gl=BR&ceid=BR:pt-419" target="_blank" title="Visitar Google News">
+                <div class="social-mobile__item social-mobile__item--googleNews"></div>
+              </a>
+            </li>
+          </ul>
+        </li>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  
+  <div class="search search--mobile">
+    <div class="search__content">
+      <div class="search__header">
+        <div class="search__interactor">+</div>
       </div>
-    </form>
+      <div class="search__body">
+        <form action="/search">
+          <div class="search__form">
+            <input class="search__input" name="q" placeholder="O que está procurando?" required type="text" />
+            <button class="search__button search__button--clear" type="button">Limpar</button>
+            <button class="search__button search__button--submit" title="Buscar" type="submit">Buscar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <div class="overlay"></div>
+  <div class="header">
+    <div class="search search--mobile">
+      <div class="search__icon"></div>
+    </div>
+    <div class="header__hamburger">
+      <button class="hamburger" title="Abrir Menu Fixo">
+        <div class="hamburger__rects">
+          <div class="hamburger__rect"></div>
+          <div class="hamburger__rect"></div>
+          <div class="hamburger__rect"></div>
+          <div class="hamburger__rect"></div>
+        </div>
+        <div class="hamburger__label">
+          <span>menu</span>
+        </div>
+      </button>
+    </div>
+    <div class="header__brand">
+      <a href="/" title="SBT News - A sua fonte segura de informações">
+        <div class="header__logo">
+          <img alt="SBT News - Logo" height="40" src="/assets/images/sbt-news-logo.png" width="98" />
+        </div>
+      </a>
+    </div>
+    <div class="header__interactors">
+      <nav class="social-share">
+        <ul class="social-share__list">
+          <li class="social-share__item social-share__item--twitter">
+            <a href="https://www.twitter.com/sbtnews" target="_blank" target="_blank" title="Visitar Twitter">
+              <img alt="SBT News - Icone Twitter" height="20" src="/assets/images/sbt-news-icone-twitter.png" width="24" />
+            </a>
+          </li>
+          <li class="social-share__item social-share__item--facebook">
+            <a href="https://www.facebook.com/sbtnewsoficial" target="_blank" title="Visitar Facebook">
+              <img alt="SBT News - Icone Facebook" src="/assets/images/sbt-news-icone-facebook.png" />
+            </a>
+          </li>
+          <li class="social-share__item social-share__item--instagram">
+            <a href="https://www.instagram.com/sbtnews/" target="_blank" title="Visitar instagram">
+              <img alt="SBT News - Icone instagram" height="33" src="/assets/images/sbt-news-icone-instagram.png" width="29" />
+            </a>
+          </li>
+          <li class="social-share__item social-share__item--youtube">
+            <a href="https://www.youtube.com/c/SBTNews?utm_source=site_sbt_news&sub_confirmation=1" target="_blank" title="Visitar Youtube">
+              <img alt="SBT News - Icone Youtube" height="18" src="/assets/images/sbt-news-icone-youtube.png" width="26" />
+            </a>
+          </li>
+          <li class="social-share__item social-share__item--linkedin">
+            <a href="https://www.linkedin.com/showcase/sbtnews/" target="_blank" title="Visitar Linkedin">
+              <img alt="SBT News - Icone Linkedin" height="20" src="/assets/images/sbt-news-icone-linkedin.png" width="20" />
+            </a>
+          </li>
+          <li class="social-share__item social-share__item--googleNews">
+            <a href="https://news.google.com/publications/CAAqBwgKMKjTnQswud21Aw" target="_blank"
+              title="Visitar Google News">
+              <img alt="SBT News - Icone Google News" height="23" src="/assets/images/sbt-news-icone-google-news.png" width="42" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <form action="/search">
+        <div class="header__search">
+          <input class="header__input" name="q" placeholder="O que está procurando?" required title="O que está procurando?" type="text" />
+          <button class="header__button" title="Buscar">
+            <img alt="SBT News - Icone Lupa" height="26" src="/assets/images/sbt-news-icone-lupa.png" width="24" />
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="menu-horizontal">
+    <div class="menu-horizontal__container">
+      <nav class="menu-horizontal__nav">
+        <ul class="menu-horizontal__list"></ul>
+      </nav>
+    </div>
+  </div>
+  
+  <div class="menu-fixo">
+    <div class="menu-fixo__header">
+      <div class="menu-fixo__breadcrumb"></div>
+      <div class="menu-fixo__close">+</div>
+    </div>
+    <nav class="menu-fixo__body">
+      <ul class="menu-fixo__list"></ul>
+    </nav>
+    <nav class="menu-fixo__social social-mobile">
+      <ul class="social-mobile__list">
+        <li>
+          <div class="social-mobile__label">
+            <span>Siga-nos:</span>
+          </div>
+        <li>
+          <ul class="social-mobile__icons">
+            <li>
+              <a href="https://www.twitter.com/sbtnews" target="_blank" title="Visitar Twitter">
+                <div class="social-mobile__item social-mobile__item--twitter"></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/sbtnewsoficial" target="_blank" title="Visitar Facebook">
+                <div class="social-mobile__item social-mobile__item--facebook"></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/sbtnews/" target="_blank" title="Visitar Instagram">
+                <div class="social-mobile__item social-mobile__item--instagram"></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/c/SBTNews?utm_source=site_sbt_news&sub_confirmation=1" target="_blank" title="Visitar Youtube">
+                <div class="social-mobile__item social-mobile__item--youtube"></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/showcase/sbtnews/?original_referer=" target="_blank" title="Visitar Linkedin">
+                <div class="social-mobile__item social-mobile__item--linkedin"></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://news.google.com/publications/CAAqBwgKMKjTnQswud21Aw?hl=pt-BR&gl=BR&ceid=BR:pt-419" target="_blank" title="Visitar Google News">
+                <div class="social-mobile__item social-mobile__item--googleNews"></div>
+              </a>
+            </li>
+          </ul>
+        </li>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  
+  <div class="search search--mobile">
+    <div class="search__content">
+      <div class="search__header">
+        <div class="search__interactor">+</div>
+      </div>
+      <div class="search__body">
+        <form action="/search">
+          <div class="search__form">
+            <input class="search__input" name="q" placeholder="O que está procurando?" required type="text" />
+            <button class="search__button search__button--clear" type="button">Limpar</button>
+            <button class="search__button search__button--submit" title="Buscar" type="submit">Buscar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  
 
 </body>
 
